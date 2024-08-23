@@ -1,6 +1,6 @@
 # Spaceship Titanic - Kaggle Competition
 
-![Spaceship Titanic](https://storage.googleapis.com/kaggle-competitions/kaggle/31349/logos/header.png?t=2021-10-07-00-46-21)
+![Spaceship Titanic](https://live.staticflickr.com/2258/2502603301_57c6af2a9a_z.jpg)
 
 ## Project Overview
 

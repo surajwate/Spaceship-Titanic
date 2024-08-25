@@ -1,0 +1,13 @@
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import StratifiedKFold
+
+if __name__ == "__main__":
+    df = pd.read_csv("./input/train.csv")
+    df["kfold"] = -1
+    df = df.sample(frac=1).reset_index(drop=True)
+    y = df.Transported.values
+    kf = StratifiedKFold(n_splits=5)
+    for f, (t_, v_) in enumerate(kf.split(X=df, y=y)):
+        df.loc[v_, 'kfold'] = f
+    df.to_csv("./input/train_folds.csv", index=False)
